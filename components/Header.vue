@@ -1,9 +1,10 @@
 <template>
   <header class="header">
     <div class="header-container">
-      <div class="logocontainer">
-        <img src="/images/logo.png" alt="Logo" class="logo">
-      </div>
+        <NuxtLink to="/" class="logocontainer">
+          <img src="/images/logo.png" alt="Logo" class="logo">
+        </NuxtLink>
+
       <button class="burger-menu" @click="toggleMenu">
         ☰
       </button>
@@ -94,10 +95,16 @@ onUnmounted(() => {
 .logocontainer {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
-.logo {
+.logocontainer img {
   width: 100px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.logocontainer:hover img {
+  transform: scale(1.1);
 }
 
 
