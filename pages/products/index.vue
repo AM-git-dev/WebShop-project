@@ -1,65 +1,67 @@
 <template>
   <div class="container">
     <h1>Nos Produits</h1>
-    <div class="products-grid">
-      <div v-for="product in products" :key="product.id" class="product-card">
-        <img :src="product.image" :alt="product.name" />
-        <h3>{{ product.name }}</h3>
-        <p>{{ product.price }} €</p>
-        <NuxtLink :to="`/products/${product.id}`" class="btn">Voir le produit</NuxtLink>
+    <p>Découvrez les catégories de produits que nous proposons.</p>
+
+    <div class="categories-grid">
+      <div v-for="category in categories" :key="category.name" class="category-card">
+        <img :src="category.image" :alt="category.name" class="category-image" />
+        <h2>{{ category.name }}</h2>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import products from "/data/products.js";
+const categories = [
+  { name: "Figurines", image: "/images/categories/figurines.jpg" },
+  { name: "Funko Pop", image: "/images/categories/funko.jpg" },
+  { name: "Cartes Pokémon", image: "/images/categories/pokemon.jpg" },
+  { name: "Accessoires", image: "/images/categories/accessoires.jpg" },
+  { name: "Confiseries", image: "/images/categories/confiseries.jpg" },
+  { name: "Snacks", image: "/images/categories/snacks.jpg" },
+  { name: "Boissons", image: "/images/categories/boissons.jpg" }
+];
 </script>
 
-
 <style scoped>
+/* Conteneur principal */
 .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
   text-align: center;
-  padding: 50px;
 }
 
-.products-grid {
+/* Grille des catégories */
+.categories-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   justify-content: center;
 }
 
-.product-card {
+/* Carte de catégorie */
+.category-card {
   background: white;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.product-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-.product-card img {
+.category-image {
   width: 100%;
-  border-radius: 5px;
+  height: 150px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 10px;
 }
 
-.btn {
-  display: inline-block;
+
+h2 {
   margin-top: 10px;
-  padding: 8px 12px;
-  background: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background: #0056b3;
+  font-size: 18px;
+  color: #333;
 }
 </style>
