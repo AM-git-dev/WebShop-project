@@ -25,7 +25,7 @@ const categories = [
 </script>
 
 <style scoped>
-/* Conteneur principal */
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -33,7 +33,7 @@ const categories = [
   text-align: center;
 }
 
-/* Grille des catégories */
+
 .categories-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -41,7 +41,7 @@ const categories = [
   justify-content: center;
 }
 
-/* Carte de catégorie */
+
 .category-card {
   background: white;
   padding: 15px;

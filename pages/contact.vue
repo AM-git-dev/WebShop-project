@@ -55,7 +55,7 @@ import ContactInfo from "@/components/ContactInfo.vue";
 </script>
 
 <style scoped>
-/* Conteneur principal */
+
 .contact-container {
   max-width: 600px;
   margin: auto;
@@ -63,7 +63,6 @@ import ContactInfo from "@/components/ContactInfo.vue";
   text-align: center;
 }
 
-/* Formulaire */
 .contact-form {
   display: flex;
   flex-direction: column;

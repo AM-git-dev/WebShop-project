@@ -18,7 +18,7 @@
             <router-link to="/products" @click="closeMenu">Produits</router-link>
           </li>
           <li>
-            <router-link to="/about" @click="closeMenu">À propos</router-link>
+            <router-link to="/about" @click="closeMenu">Qui sommes-nous ?</router-link>
           </li>
           <li>
             <router-link to="/contact" @click="closeMenu">Contact</router-link>

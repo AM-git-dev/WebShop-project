@@ -27,12 +27,12 @@ defineProps({
   address: String,
   phone: String,
   email: String,
-  hours: Object, // Horaires sous forme d'objet { "Lundi": "10h - 19h", ... }
+  hours: Object,
 });
 </script>
 
 <style scoped>
-/* Conteneur des infos */
+
 .contact-info {
   background: #f5f5f5;
   padding: 20px;
@@ -41,18 +41,16 @@ defineProps({
   text-align: left;
 }
 
-/* Conteneur des horaires */
+
 .horaires-container {
   display: flex;
   align-items: flex-start;
 }
 
-/* "Horaires :" reste sur la même ligne que Lundi */
 .horaires-container strong {
-  min-width: 120px; /* Largeur minimale pour aligner les jours */
+  min-width: 120px;
 }
 
-/* Liste des horaires */
 .horaires-list {
   display: flex;
   position: relative;
@@ -60,13 +58,11 @@ defineProps({
   flex-direction: column;
 }
 
-/* Chaque ligne des horaires */
 .horaires-row {
   display: flex;
   gap: 10px;
 }
 
-/* Ajustement pour aligner les jours et horaires */
 .horaires-row strong {
   min-width: 100px;
   text-align: left;
