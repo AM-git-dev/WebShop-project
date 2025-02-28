@@ -4,7 +4,7 @@
 
     <ContactInfo
         name="Topio Games - Charleroi"
-        address="Rive Gauche , Place Verte 20 , 6000 Charleroi, Belgique "
+        address="Rive Gauche , Place Verte 20 , 6000 Charleroi. "
         phone="+32 487 12 20 97"
         email="info@topiogames.be"
         :hours="{
@@ -20,7 +20,7 @@
 
     <ContactInfo
         name="Topio Games - Châtelet"
-        address="Rue de la station 214, 6200 Châtelet, Belgique."
+        address="Rue de la station 214, 6200 Châtelet."
         phone="+32 487 12 20 97"
         email="info@topiogames.be"
         :hours="{
@@ -95,4 +95,5 @@ import ContactInfo from "@/components/ContactInfo.vue";
 .contact-form button:hover {
   background: #0056b3;
 }
+
 </style>
