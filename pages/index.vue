@@ -88,8 +88,6 @@ const formatDate = (dateStr) => {
   border-radius: 10px;
 }
 
-
-
 .news-date {
   font-size: 14px;
   color: #888;
@@ -100,6 +98,7 @@ const formatDate = (dateStr) => {
   font-size: 16px;
   margin-top: 10px;
 }
+
 
 .twitch-section {
   margin-top: 40px;

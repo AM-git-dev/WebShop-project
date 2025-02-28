@@ -27,11 +27,8 @@ const categories = [
 <style scoped>
 
 .products-container {
-  display: flex;
-  flex-direction: column;
-  min-height: calc(100vh - 120px);
-  padding: 40px;
-  text-align: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
 
@@ -62,11 +59,4 @@ const categories = [
   border-radius: 10px;
 }
 
-@media screen and (min-width: 600px) {
-  .category-card:nth-last-child(1):nth-child(odd) {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width : 70%
-  }
-}
 </style>
