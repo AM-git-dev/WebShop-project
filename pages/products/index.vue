@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="products-container">
     <h1>Nos Produits</h1>
     <p>Découvrez les catégories de produits que nous proposons.</p>
 
@@ -26,9 +26,10 @@ const categories = [
 
 <style scoped>
 
-.container {
-  max-width: 1200px;
-  margin: auto;
+.products-container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 120px);
   padding: 40px;
   text-align: center;
 }
@@ -37,10 +38,11 @@ const categories = [
 .categories-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  flex-grow: 1;
   gap: 20px;
   justify-content: center;
+  align-items: stretch;
 }
-
 
 .category-card {
   background: white;
@@ -48,20 +50,23 @@ const categories = [
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .category-image {
   width: 100%;
   height: 150px;
   object-fit: contain;
-  background-color: white;
   border-radius: 10px;
 }
 
-
-h2 {
-  margin-top: 10px;
-  font-size: 18px;
-  color: #333;
+@media screen and (min-width: 600px) {
+  .category-card:nth-last-child(1):nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width : 70%
+  }
 }
 </style>
