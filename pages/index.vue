@@ -17,12 +17,27 @@
       </div>
       <p v-else>Aucune actualité pour le moment.</p>
     </div>
+
+    <div class="twitch-section">
+      <h2>🎥 Nous sommes en live sur Twitch !</h2>
+      <p>Rejoignez-nous pour découvrir nos nouveaux produits et nos événements en direct.</p>
+      <button @click="showTwitch = true" v-if="!showTwitch" class="twitch-btn">Regarder le live</button>
+
+      <div v-if="showTwitch" class="twitch-container">
+        <iframe
+            src="https://player.twitch.tv/?channel=kaida_v_t&parent=localhost"
+            allowfullscreen="true"
+            height="400"
+            width="700">
+        </iframe>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
 import news from "~/data/news.js";
-
+const showTwitch = ref(false);
 const formatDate = (dateStr) => {
   const options = { year: "numeric", month: "long", day: "numeric" };
   return new Date(dateStr).toLocaleDateString("fr-FR", options);
@@ -84,5 +99,29 @@ const formatDate = (dateStr) => {
 .news-content {
   font-size: 16px;
   margin-top: 10px;
+}
+
+.twitch-section {
+  margin-top: 40px;
+}
+
+.twitch-btn {
+  background-color: #6441a5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.twitch-btn:hover {
+  background-color: #543893;
+}
+
+/* Player Twitch */
+.twitch-container {
+  margin-top: 20px;
 }
 </style>
