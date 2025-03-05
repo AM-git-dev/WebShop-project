@@ -1,15 +1,15 @@
 <template>
   <footer>
-    <p>&copy; 2025 - Topio Games. Tous droits réservés.</p>
+    <p>&copy; 2025 - WebShop. Tous droits réservés.</p>
 
     <div class="social-links">
-      <a href="https://www.facebook.com/profile.php?id=61552790428386" target="_blank">
+      <a href="" target="_blank">
         <img src="/icons/facebook.svg" alt="Facebook" />
       </a>
-      <a href="https://www.instagram.com/topio_games_charleroi/" target="_blank">
+      <a href="" target="_blank">
         <img src="/icons/instagram.svg" alt="Instagram" />
       </a>
-      <a href="https://tiktok.com/@topiogames" target="_blank">
+      <a href="" target="_blank">
         <img src="/icons/tiktok.svg" alt="TikTok" />
       </a>
     </div>

@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header-container">
         <NuxtLink to="/" class="logocontainer">
-          <img src="/images/logo.png" alt="Logo" class="logo">
+          <img src="" alt="Logo du site" class="logo">
         </NuxtLink>
 
       <button class="burger-menu" @click="toggleMenu">

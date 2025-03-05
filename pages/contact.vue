@@ -3,10 +3,10 @@
     <h1>Nos Boutiques</h1>
 
     <ContactInfo
-        name="Topio Games - Charleroi"
+        name="Boutique - Charleroi"
         address="Rive Gauche , Place Verte 20 , 6000 Charleroi. "
-        phone="+32 487 12 20 97"
-        email="info@topiogames.be"
+        phone="+32 123 45 67 89"
+        email="webshop@webshop.be"
         :hours="{
         'Lundi': '10h - 19h',
         'Mardi': '10h - 19h',
@@ -19,10 +19,10 @@
     />
 
     <ContactInfo
-        name="Topio Games - Châtelet"
-        address="Rue de la station 214, 6200 Châtelet."
-        phone="+32 487 12 20 97"
-        email="info@topiogames.be"
+        name="Boutique 2 - Bruxelles"
+        address="Rue du Placeholder 35, 1000 Bruxelles."
+        phone="+32 123 45 67 89"
+        email="webshop@webshop.be"
         :hours="{
         'Lundi': 'Fermé',
         'Mardi': '12h - 19h',

@@ -1,7 +1,6 @@
 <template>
   <div class="home-container">
     <div class="banner">
-<!--      <img src="/images/us.jpg" alt="Notre boutique" />-->
     </div>
 
 
@@ -25,7 +24,7 @@
 
       <div v-if="showTwitch" class="twitch-container">
         <iframe
-            src="https://player.twitch.tv/?channel=kaida_v_t&parent=localhost"
+            src="https://player.twitch.tv/?channel=&parent=localhost"
             allowfullscreen="true"
             height="400"
             width="700">
